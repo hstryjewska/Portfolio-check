@@ -248,7 +248,12 @@ label:hover {
 
 .text-center w-responsive mx-auto mb-5 {
     font-size: 1.5em;
-    font-weight: 400;
+    font-weight: 600;
+}
+
+.bg-contact {
+    background-image: url(img/bg-contact.jpg);
+    background-size: contain no-repeat;
 }
 
 @media screen and (max-width: 767px) {
