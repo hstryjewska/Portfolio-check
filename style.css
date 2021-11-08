@@ -265,7 +265,7 @@ label:hover {
 }
 
 #contact:hover {
-    background-color: #ff9700;
+    background-color: rgba(92, 93, 93, 0.5);
     opacity: 70%;
 }
 
