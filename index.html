@@ -15,14 +15,16 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
-<!-- header and nav -->
+<!-- !!!!!!! NAV HEADER !!!!!!! -->
 
 <body>
     <div class="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+
             <a class="navbar-brand" href="#">
                 <h2><i class="fas fa-dragon"></i>Front End Developer</h2>
             </a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -43,23 +45,20 @@
 
             </div>
         </nav>
-
     </div>
 
-    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!carousel!!!!!!!!!!!!!!! -->
+    <!-- !!!!!!! CAROUSEL !!!!!!! -->
+
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
 
-
-
-
         <div class="carousel-inner">
-
             <div class="carousel-item active">
                 <img src="img/1-carousel.jpg" class="d-block img-carousel w-100" alt="statement">
                 <div class="carousel-caption d-flex h-100 align-items-center justify-content-sm-lg-xl-center">
                     <h2>Your website.</h2>
                 </div>
             </div>
+
             <div class="carousel-item">
                 <img src="img/2-carousel.jpg" class="d-block img-carousel w-100" alt="coding">
                 <div class="carousel-caption d-flex h-100 align-items-center justify-content-center">
@@ -67,6 +66,7 @@
                     <p>because it's unique.</p>
                 </div>
             </div>
+
             <div class="carousel-item">
                 <img src="img/3-carousel.jpg" class="d-block img-carousel w-100" alt="users">
                 <div class="carousel-caption d-flex h-100 align-items-center justify-content-lg-between">
@@ -83,6 +83,7 @@
 
                 </div>
             </div>
+
         </div>
         <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -93,44 +94,51 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <!-- TECHNOLOGIES -->
+    <!-- !!!!!!! TECHNOLOGIES !!!!!!! -->
 
     <section class="container-fluid main-section text-center d-flex align-items-center" id="tech">
+
         <div class="row">
             <div class="col-12">
                 <h3>Technologies</h3>
                 <hr>
             </div>
+
             <div class="col-12 col-sm-6 col-md-4 d-flex align-items-center justify-content-center flex-column item ">
                 <div class="circle">
                     <i class="fab fa-html5"></i>
                 </div>
                 <h5> HTML5 </h5>
             </div>
+
             <div class="col-12 col-sm-6 col-md-4 d-flex align-items-center justify-content-center flex-column item ">
                 <div class="circle">
                     <i class="fab fa-css3-alt"></i>
                 </div>
                 <h5> CSS3 </h5>
             </div>
+
             <div class="col-12 col-sm-6 col-md-4 d-flex align-items-center justify-content-center flex-column item ">
                 <div class="circle">
                     <i class="fab fa-js"></i>
                 </div>
                 <h5> JavaScript </h5>
             </div>
+
             <div class="col-12 col-sm-6 col-md-4 d-flex align-items-center justify-content-center flex-column item ">
                 <div class="circle">
                     <i class="fab fa-bootstrap"></i>
                 </div>
                 <h5> Bootstrap </h5>
             </div>
+
             <div class="col-12 col-sm-6 col-md-4 d-flex align-items-center justify-content-center flex-column item ">
                 <div class="circle">
                     <i class="fab fa-git"></i>
                 </div>
                 <h5> GIT </h5>
             </div>
+
             <div class="col-12 col-sm-6 col-md-4 d-flex align-items-center justify-content-center flex-column item ">
                 <div class="circle">
                     <i class="fab fa-wordpress"></i>
@@ -138,14 +146,14 @@
                 <h5> WordPress </h5>
             </div>
         </div>
-        </div>
-        </div>
+
     </section>
 
-    <!-- about -->
+    <!-- !!!!!!! ABOUT !!!!!!! -->
 
     <section id="about" class="about">
         <div class="container">
+
             <header class="section-header">
                 <h2>About me</h2>
                 <hr>
@@ -156,6 +164,7 @@
                     <img src="img/1-about.jpg" alt="Portfolio item 3">
                     <h3>What we want</h3>
                 </div>
+
                 <div class="about-item">
                     <img src="img/2-about.jpg" alt="About item 1">
                     <h3>is defined by... </h3>
@@ -169,32 +178,34 @@
                     <img src="img/4-about.jpg" alt="About item 4">
                     <h3> Or rather our determination</h3>
                 </div>
+
                 <div class="about-item">
                     <img src="img/5-about.jpg" alt="About item 5">
                     <h3>builds</h3>
                 </div>
+
                 <div class="about-item">
                     <img src="img/6-about.jpg" alt="About item 6">
                     <h3>our future?</h3>
                 </div>
 
-
             </div>
     </section>
 
-    <!--contact-->
+    <!--!!!!!!! CONTACT !!!!!!!-->
     <section class="bg-4 contact" id="contact">
+
         <div class="bg-contact">
             <h2 class="h2-responsive font-weight-bold text-center my-4">Contact</h2>
             <p class="text-center w-responsive mx-auto mb-5">Thank you so much for getting here!<br/>I’d really love to get in touch with you to meet your issues or just say hello!
             </p>
         </div>
+
         <div class="row">
-
-
             <div class="col-md-9 mb-md-0 mb-5">
                 <form id="contact-form" name="contact-form" action="contact.php" enctype="text/plain" method="post" onsubmit="window.location.reload()">
                     <div class="row">
+                        <!-- NAME -->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
                                 <input type="text" id="name" name="name" class="form-control">
@@ -202,10 +213,9 @@
                                 <span class="error">
                                     <p id="name_error"></p>
                                 </span>
-
                             </div>
                         </div>
-
+                        <!-- EMAIL -->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
                                 <input type="text" id="email" name="email" class="form-control">
@@ -216,7 +226,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- SUBJECT -->
                     <div class="row">
                         <div class="col-md-12">
                             <div class="md-form mb-0">
@@ -226,7 +236,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- MESSAGE -->
                     <div class="row">
                         <div class="col-md-12">
                             <div class="md-form">
@@ -236,17 +246,17 @@
                                     <p id="message_error"></p>
                                 </span>
                             </div>
-
                         </div>
                     </div>
                 </form>
-
+                <!-- !!!!! MESSAGE BUTTON !!!!! -->
                 <div class="text-center text-md-left">
-                    <a class="btn btn-primary" name="submit" onclick="validateForm();">Send</a>
+                    <a class="btn btn-primary" id="btn-submit" name="submit" onclick="validateForm();">Send</a>
                 </div>
                 <div class="status"></div>
             </div>
 
+            <!-- ADDITIONAL -->
             <div class="col-md-3 text-center">
                 <ul class="list-unstyled mb-0">
 
@@ -264,17 +274,19 @@
 
 
         </div>
-        </div>
-        </div>
+    </section>
 
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-        <script src="main.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
 </body>
 
 </html>

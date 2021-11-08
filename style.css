@@ -128,7 +128,7 @@ hr {
 #author {
     height: 150px;
     width: 100px;
-    border-radius: 20%;
+    border-radius: 10%;
 }
 
 
@@ -182,7 +182,7 @@ hr {
 }
 
 
-/* FORM */
+/* CONTACT */
 
 .form-control {
     background-color: transparent;
