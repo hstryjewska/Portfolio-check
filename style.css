@@ -246,14 +246,17 @@ label:hover {
     color: red;
 }
 
-.text-center w-responsive mx-auto mb-5 {
+.bg-contact h1,
+.bg-contact p {
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 400;
+    font-style: bold;
 }
 
 .bg-contact {
-    background-image: url(img/bg-contact.jpg);
-    background-size: contain no-repeat;
+    border-color: #ccc;
+    border-style: double;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 767px) {
