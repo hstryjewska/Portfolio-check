@@ -50,20 +50,7 @@ i {
 
 .carousel {
     font-family: 'Nunito', sans-serif;
-    /* font-weight: 800;
-    font-size: 3vh; */
-    /* position: absolute; */
-    /* max-width: 80%;
-            max-height: 50%; */
-    /* max-width: 100%;
-                max-height: 60%; */
 }
-
-
-/* #carouselExampleCaptions {
-                position: absolute;
-                max-width: 100%;
-            } */
 
 .carousel-inner .carousel-item img {
     max-width: 100%;
@@ -255,6 +242,15 @@ label:hover {
     border: 0;
 }
 
+.error {
+    color: red;
+}
+
+.text-center w-responsive mx-auto mb-5 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
 @media screen and (max-width: 767px) {
     .carousel-caption .quotes-container h2,
     .carousel-caption .quotes-container p,
@@ -280,16 +276,9 @@ label:hover {
         width: 100%;
         height: 100%;
     }
-    .main-section {
-        flex-basis: 50%;
-    }
-    .row {
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
+    @media (max-width: 768px) {
+        .carousel .carousel-inner .item {
+            min-height: 500px;
+        }
     }
 }
