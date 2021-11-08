@@ -246,17 +246,27 @@ label:hover {
     color: red;
 }
 
-.bg-contact h1,
+.bg-contact h2,
 .bg-contact p {
-    font-size: 1.5em;
-    font-weight: 400;
-    font-style: bold;
+    color: white;
+    font-weight: 200;
+    line-height: 1.2;
+    text-shadow: 2px 4px 3px rgb(0 0 0 / 60%);
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
-.bg-contact {
-    border-color: #ccc;
-    border-style: double;
-    margin-bottom: 20px;
+#contact i:hover {
+    color: #ccc;
+}
+
+#contact:hover {
+    background-color: #ff9700;
+    opacity: 70%;
 }
 
 @media screen and (max-width: 767px) {
