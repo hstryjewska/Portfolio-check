@@ -1,4 +1,6 @@
-function validateForm() {
+let error = 0;
+
+const validateForm = () => {
   let nameField = document.forms["contact-form"]["name"].value;
   document.getElementById("name_error").innerHTML = "";
   if (nameField == null || nameField == "") {
@@ -26,4 +28,4 @@ function validateForm() {
     return false;
   }
   document.querySelector(".status").innerHTML = "Sending...";
-}
+};
