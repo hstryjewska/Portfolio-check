@@ -27,5 +27,4 @@ const validateForm = () => {
   if (error > 0) {
     return false;
   }
-  document.querySelector(".status").innerHTML = "Sending...";
 };
