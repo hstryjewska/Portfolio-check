@@ -237,8 +237,19 @@ textarea#message:focus {
     font-weight: 400;
 }
 
+input:hover {
+    border-radius: 1.5em;
+    background-color: rgba(255, 151, 0, 0.5);
+}
+
+textarea:hover {
+    border-radius: 1.5em;
+    background-color: rgba(92, 77, 55, 0.5);
+}
+
 label:hover {
     color: #ff9700;
+    
 }
 
 .btn-primary:hover {
