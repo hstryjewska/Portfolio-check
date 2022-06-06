@@ -203,7 +203,7 @@
 
         <div class="row">
             <div class="col-md-9 mb-md-0 mb-5">
-                <form id="submit-form" name="contact-form" action="https://formspree.io/f/mayaddnq" method="POST" enctype="text/plain">
+                <form id="contact-form" action="https://formspree.io/f/mayaddnq"  method="POST" name="contact-form"  enctype="text/plain">
                     <div class="row">
                         <!-- NAME -->
                         <div class="col-md-6">
@@ -248,15 +248,16 @@
                             </div>
                         </div>
                     </div>
+                     <!-- !!!!! MESSAGE BUTTON !!!!! -->
+                    <div class="text-center text-md-left">
+                        <input type="submit" class="btn btn-primary" id="btn-submit" name="btn-submit" value="Send"/>
+                        <span class="success">
+                        <p id="statusOn"></p>
+                        </span>
+                    </div>
                 </form>
-                <!-- !!!!! MESSAGE BUTTON !!!!! -->
-                <div class="text-center text-md-left">
-                    <input type="submit" class="btn btn-primary" id="btn-submit" name="submit">Send</input>
-                </div>
-                <div >
-                    <p id="statusOn"></p>
-                </div>
-            </div>
+               
+               </div>
 
             <!-- ADDITIONAL -->
             <div class="col-md-3 text-center">
@@ -284,10 +285,11 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="main.js"></script>
-    <script src="submit.js"></script>
+   
+      <!-- Place this script at the end of the body tag -->
+      <script src="submit.js"></script>
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
 </body>
