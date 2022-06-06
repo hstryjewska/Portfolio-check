@@ -71,8 +71,13 @@ i {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-
-
+#example {
+     margin-top: 2rem;
+ }
+ #example img {
+    height: 100%;
+    width: 100%;
+}
 /* TECHNOLOGIES */
 
 hr {
@@ -257,6 +262,10 @@ label:hover {
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+
+.bg-contact p {
+    padding: 2rem;
 }
 
 #contact i:hover {
