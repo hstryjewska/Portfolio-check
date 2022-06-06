@@ -68,8 +68,8 @@ i {
     font-size: 2em;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 #example {
      margin-top: 2rem;
@@ -89,13 +89,13 @@ hr {
 
 .main-section {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 4rem;
     background-image: url('img/1-section.jpg');
     background-size: cover;
 }
 
 .line {
-    height: 10px;
+    height: 0.7rem;
     width: 30%;
     background: #969696;
 }
@@ -274,6 +274,20 @@ label:hover {
 
 #contact:hover {
     background-color: rgba(92, 93, 93, 0.1);
+}
+.list-unstyled i{
+   margin-right: 0.5rem;
+}
+.list-unstyled a{
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+.list-unstyled i:hover,
+.list-unstyled a:hover {
+    transform: scale(1.2);
+    font-weight: 800;
+
 }
 
 @media screen and (max-width: 767px) {
