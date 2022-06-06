@@ -264,8 +264,7 @@ label:hover {
 }
 
 #contact:hover {
-    background-color: rgba(92, 93, 93, 0.5);
-    opacity: 70%;
+    background-color: rgba(92, 93, 93, 0.1);
 }
 
 @media screen and (max-width: 767px) {
