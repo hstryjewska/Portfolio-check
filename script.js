@@ -62,3 +62,12 @@ async function handleSubmit(event) {
       status.innerHTML = "Oops! There was a problem submitting your form";
     });
 }
+
+document.getElementById('example').addEventListener('click', openModal);
+function openModal(event) {
+  const touch = event.target;
+  if(touch) {
+    document.getElementById('myModal').classList.remove("close");
+    document.getElementById('myModal').classList.add("open");
+  }
+}

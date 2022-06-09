@@ -317,6 +317,30 @@ label:hover {
 
 }
 
+.close {
+    display: none;
+}
+
+.open {
+    height: 100vh;
+    width: 100vw;
+    background-color: #111;
+
+    display: block;
+    position: fixed;
+    
+}
+
+.open img {
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    
+    display: block;
+    position: fixed;
+    
+}
+
 @media screen and (max-width: 767px) {
     .carousel-caption .quotes-container h2,
     .carousel-caption .quotes-container p,
