@@ -95,80 +95,93 @@
         </a>
     </div>
     <!-- !!!! EXAMPLE   !!!!! -->
-    <section class="container-fluid text-center d-flex align-items-center" id="example">
-        <div class="row">
+    <section class="container-fluid text-center d-flex align-items-center">
+        <div class="row" id="demoBox">
             <div class="col-12">
                 <h3>Personal - in progress</h3>
                 <hr>
             </div>
-            <img src="img/geotoolkitDemo.png" alt="">
+            <div class="HoverDiv">
+            <img src="img/geotoolkitDemo.png" alt="demo" class="thumbnail zoom">
+           </div>
         </div>
+      
     </section>
-    <div class="row close" id="myModal">
-        <div class="col-12">
-           <img src="img/geotoolkitDemo.png" alt="demo-image">
-        </div>
-    </div>
+   
 
     <!-- !!!!!!! TECHNOLOGIES !!!!!!! -->
 
     <section class="container-fluid main-section text-center d-flex align-items-center" id="tech">
-
-        <div class="row">
-            <div class="col-12">
-                <h3>Technologies</h3>
+        <div class="container">
+            <header class="section-header">
+                <h2>Technologies</h2>
                 <hr>
-            </div>
+            </header>
+        <div class="row" >
+         
 
             <div class="col-12 col-sm-6 col-md-4 d-flex align-items-center justify-content-center flex-column item ">
                 <div class="circle">
-                    <i class="fab fa-react"></i>
+                    <a target="_blank" rel="noopener noreferrer" href="https://reactjs.org/">
+                        <i class="fab fa-react"></i>
+                    </a>
                 </div>
                 <h5> ReactJS </h5>
             </div>
 
             <div class="col-12 col-sm-6 col-md-4 d-flex align-items-center justify-content-center flex-column item ">
                 <div class="circle">
-                    <i class="fab fa-html5"></i>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.w3schools.com/TAgs/default.asp">
+                         <i class="fab fa-html5"></i>
+                    </a>
                 </div>
                 <h5> HTML5 </h5>
             </div>
 
             <div class="col-12 col-sm-6 col-md-4 d-flex align-items-center justify-content-center flex-column item ">
                 <div class="circle">
-                    <i class="fab fa-css3-alt"></i>
+                    <a target="_blank" rel="noopener noreferrer" href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+                        <i class="fab fa-css3-alt"></i>
+                    </a>
                 </div>
                 <h5> CSS3 </h5>
             </div>
 
             <div class="col-12 col-sm-6 col-md-4 d-flex align-items-center justify-content-center flex-column item ">
                 <div class="circle">
-                    <i class="fab fa-js"></i>
+                    <a target="_blank" rel="noopener noreferrer" href="https://javascript.info/">
+                        <i class="fab fa-js"></i>
+                    </a>
                 </div>
                 <h5> JavaScript </h5>
             </div>
 
             <div class="col-12 col-sm-6 col-md-4 d-flex align-items-center justify-content-center flex-column item ">
                 <div class="circle">
-                    <i class="fab fa-bootstrap"></i>
+                    <a target="_blank" rel="noopener noreferrer" href="https://javascript.info/">
+                        <i class="fab fa-bootstrap"></i>
+                    </a>
                 </div>
                 <h5> Bootstrap </h5>
             </div>
 
            <div class="col-12 col-sm-6 col-md-4 d-flex align-items-center justify-content-center flex-column item ">
                 <div class="circle">
-                    <i class="fab fa-wordpress"></i>
+                    <a  target="_blank" rel="noopener noreferrer" href="https://wordpress.com/">
+                        <i class="fab fa-wordpress"></i>
+                    </a>
                 </div>
                 <h5> WordPress </h5>
             </div>
         </div>
+    </div>
 
     </section>
 
     <!-- !!!!!!! ABOUT !!!!!!! -->
 
     <section id="about" class="about">
-        <div class="container">
+        <div class="container" data-toggle="modal" data-target="#exampleModal">
 
             <header class="section-header">
                 <h2>About me</h2>
@@ -177,35 +190,84 @@
 
             <div class="about-wrapper">
                 <div class="about-item">
-                    <img src="img/1-about.jpg" alt="Portfolio item 3">
+                    <img src="img/1-about.jpg" alt="Gallery item 1" data-target="#carouselExample" data-slide-to="0">
                     <h3>What we want</h3>
                 </div>
 
                 <div class="about-item">
-                    <img src="img/2-about.jpg" alt="About item 1">
+                    <img src="img/2-about.jpg" alt="Gallery item 2" data-target="#carouselExample" data-slide-to="1">
                     <h3>is defined by... </h3>
                 </div>
                 <div class="about-item">
-                    <img src="img/3-about.jpg" alt="About item 2">
+                    <img src="img/3-about.jpg" alt="Gallery item 3" data-target="#carouselExample" data-slide-to="2">
                     <h3> who we are?</h3>
                 </div>
 
                 <div class="about-item">
-                    <img src="img/4-about.jpg" alt="About item 4">
+                    <img src="img/4-about.jpg" alt="Gallery item 4" data-target="#carouselExample" data-slide-to="3">
                     <h3> Or rather our determination</h3>
                 </div>
 
                 <div class="about-item">
-                    <img src="img/5-about.jpg" alt="About item 5">
+                    <img src="img/5-about.jpg" alt="Gallery item 5" data-target="#carouselExample" data-slide-to="4">
                     <h3>builds</h3>
                 </div>
 
                 <div class="about-item">
-                    <img src="img/6-about.jpg" alt="About item 6">
+                    <img src="img/6-about.jpg" alt="Gallery item 6" data-target="#carouselExample" data-slide-to="5">
                     <h3>our future?</h3>
                 </div>
 
             </div>
+                <!-- MODAL -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExample" data-slide-to="1"></li>
+                          <li data-target="#carouselExample" data-slide-to="2"></li>
+                          <li data-target="#carouselExample" data-slide-to="3"></li>
+                          <li data-target="#carouselExample" data-slide-to="4"></li>
+                          <li data-target="#carouselExample" data-slide-to="5"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="img/1-about.jpg" alt="Gallery item 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/2-about.jpg" alt="Gallery item 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/3-about.jpg" alt="Gallery item 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/4-about.jpg" alt="Gallery item 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/5-about.jpg" alt="Gallery item 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/6-about.jpg" alt="Gallery item 6">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END OF MODAL -->
+              
     </section>
 
     <!--!!!!!!! CONTACT !!!!!!!-->

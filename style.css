@@ -71,13 +71,15 @@ i {
     margin-inline-start: 0;
     margin-inline-end: 0;
 }
-#example {
+/* EXAMPLE DEMO */
+#demoBox {
      margin-top: 2rem;
  }
- #example img {
-    height: 100%;
-    width: 100%;
+ #demoBox img {
+    height: 75%;
+    width: 75%;
 }
+
 /* TECHNOLOGIES */
 
 hr {
@@ -88,6 +90,7 @@ hr {
 }
 
 .main-section {
+    position: relative;
     width: 100%;
     margin-top: 4rem;
     background-image: url('img/1-section.jpg');
@@ -113,12 +116,26 @@ hr {
 .circle {
     background: #ededed;
     opacity: 0.8;
-    width: 100px;
-    height: 100px;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
-    padding: 30px;
+    padding: 1.8rem;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+}
+.circle:hover {
+    position: absolute;
+    opacity: 1;
+    -webkit-box-shadow: 8px 7px 24px 0px rgba(251, 251, 251, 1);
+    -moz-box-shadow: 8px 7px 24px 0px rgba(251, 251, 251, 1);
+    box-shadow: 8px 7px 24px 0px rgba(251, 251, 251, 1);
+	padding: 0.3rem;
+	width: 8rem;
+	height: 8rem;
+}
+
+.circle i:hover {
+   font-weight: 800;
 }
 
 .align-items-center i {
@@ -131,8 +148,8 @@ hr {
 }
 
 #author {
-    height: 150px;
-    width: 100px;
+    height: 9.3rem;
+    width: 6.3rem;
     border-radius: 10%;
 }
 
@@ -140,8 +157,8 @@ hr {
 /* ABOUT */
 
 #about {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .about-wrapper {
@@ -151,7 +168,7 @@ hr {
 
 .about-wrapper .about-item {
     flex-basis: 30%;
-    height: 250px;
+    height: 16rem;
     position: relative;
 }
 
@@ -170,7 +187,7 @@ hr {
     background-color: rgba(92, 93, 93, 0.5);
     margin: 0;
     text-align: center;
-    line-height: 200px;
+    line-height: 12rem;
     color: #fff;
     font-weight: 300;
     font-size: 1em;
@@ -201,8 +218,8 @@ textarea {
     border-bottom: 1px solid #fff;
     background-color: transparent;
     display: inline-block;
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 1rem;
+    margin-bottom: 1rem;
     color: #fff;
 }
 
@@ -235,9 +252,9 @@ input[type="text"]::after {
 .btn-primary {
     border: 2px solid #ccc;
     background-color: transparent;
-    border-radius: 30px;
+    border-radius: 1.8em;
     font-weight: 600;
-    padding: 15px 35px;
+    padding: 1rem 2rem;
     text-align: center;
 }
 
@@ -325,20 +342,23 @@ label:hover {
     height: 100vh;
     width: 100vw;
     background-color: #111;
-
+ z-index: 9999;
     display: block;
-    position: fixed;
+    justify-content: center;
     
 }
 
 .open img {
-    height: 100%;
-    width: 100%;
+    height: 20rem;
+    width: 20rem;
     background-color: #111;
+   display: block;
     
-    display: block;
-    position: fixed;
-    
+}
+
+#exitBtn {
+    position: absolute;
+    top: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -359,7 +379,7 @@ label:hover {
     }
     .about-wrapper .about-item {
         flex-basis: 50%;
-        height: 250px;
+        height: 16rem;
         position: relative;
     }
     .carousel-inner .carousel-item img {
@@ -368,7 +388,7 @@ label:hover {
     }
     @media (max-width: 768px) {
         .carousel .carousel-inner .item {
-            min-height: 500px;
+            min-height: 32rem;
         }
     }
 }
