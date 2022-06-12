@@ -61,3 +61,37 @@ async function handleSubmit(event) {
       status.innerHTML = "Oops! There was a problem submitting your form";
     });
 }
+/// ON SCROLL MENU OPACITY ///
+const navbar = document.querySelector('nav')
+
+window.onscroll = function() {
+  if (window.pageYOffset > 0) {
+    navbar.classList.add('light')
+  } else {
+    navbar.classList.remove('light')
+  }
+}
+
+///MODAL GALLERY ///////////////////////////////////////////////////////////////
+const modalBox = document.querySelector('.modal-holder');
+
+document.getElementById('previewGallery').addEventListener('click', turnOff);
+document.querySelectorAll('.about-item').forEach((item) => item.addEventListener("click", toggleModal));
+document.getElementById('about-modal-holder').addEventListener('click', openLightboxModal);
+
+function toggleModal(event) {
+    modalBox.classList.toggle('visible');
+    document.querySelector('#preview-src').src = event.currentTarget.querySelector('img').src;
+}
+
+
+function turnOff() {
+    modalBox.classList.toggle('visible');
+}
+
+function openLightboxModal(event) {
+    if (event.target === modalBox) {
+        toggleModal();
+        turnOff();
+    }
+}
