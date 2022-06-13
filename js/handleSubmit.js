@@ -1,10 +1,13 @@
 const form = document.getElementById("contact-form");
 
 form.addEventListener("submit", handleSubmit);
+
 async function handleSubmit(event) {
   event.preventDefault();
+
   const status = document.getElementById("statusOn");
   const data = new FormData(event.target);
+  
   let error = 0;
 
   let nameField = document.forms["contact-form"]["name"].value;
@@ -61,35 +64,5 @@ async function handleSubmit(event) {
       status.innerHTML = "Oops! There was a problem submitting your form";
     });
 }
-/// ON SCROLL MENU OPACITY ///
-const navbar = document.querySelector('nav')
 
-window.onscroll = function() {
-  if (window.pageYOffset > 0) {
-    navbar.classList.add('light')
-  } else {
-    navbar.classList.remove('light')
-  }
-}
-///MODAL GALLERY ///////////////////////////////////////////////////////////////
-const modalBox = document.querySelector('.modal-holder');
-
-document.getElementById('previewGallery').addEventListener('click', turnOff);
-document.querySelectorAll('.about-item').forEach((item) => item.addEventListener("click", toggleModal));
-document.getElementById('about-modal-holder').addEventListener('click', openLightboxModal);
-
-const toggleModal = (event) => {
-    modalBox.classList.toggle('visible');
-    document.querySelector('#preview-src').src = event.currentTarget.querySelector('img').src;
-}
-
-const turnOff = () => {
-    modalBox.classList.toggle('visible');
-}
-
-const openLightboxModal = (event) => {
-    if (event.target === modalBox) {
-        toggleModal();
-        turnOff();
-    }
-}
+export { handleSubmit };
