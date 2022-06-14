@@ -78,16 +78,16 @@ document.getElementById('previewGallery').addEventListener('click', turnOff);
 document.querySelectorAll('.about-item').forEach((item) => item.addEventListener("click", toggleModal));
 document.getElementById('about-modal-holder').addEventListener('click', openLightboxModal);
 
-const toggleModal = (event) => {
+function toggleModal(event) {
     modalBox.classList.toggle('visible');
     document.querySelector('#preview-src').src = event.currentTarget.querySelector('img').src;
-}
+};
 
-const turnOff = () => {
+function turnOff() {
     modalBox.classList.toggle('visible');
-}
+};
 
-const openLightboxModal = (event) => {
+function openLightboxModal(event) {
     if (event.target === modalBox) {
         toggleModal();
         turnOff();
